@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    @apply max-w-full w-10/12 mx-auto px-3 md:px-0
+}
+
+.bannerBg{
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.9), 
+        rgba(255, 255, 255, 0.9)
+      ),url("./assets/images/image-1.png");
+}
