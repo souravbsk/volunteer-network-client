@@ -30,7 +30,7 @@ const VolunteerRegister = () => {
          console.log(newVolunteer);
 
         //  booking event 
-        fetch("http://localhost:5000/eventsBook",{
+        fetch("https://volunteer-network-server-brown.vercel.app/eventsBook",{
             method:"POST",
             headers:{
                 'content-type':"application/json"

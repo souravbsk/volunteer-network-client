@@ -34,7 +34,7 @@ const router = createBrowserRouter([
             {
                 path:":id",
                 element:<PrivateRoute><VolunteerRegister></VolunteerRegister></PrivateRoute>,
-                loader:({params}) => fetch(`http://localhost:5000/events/${params.id}`)
+                loader:({params}) => fetch(`https://volunteer-network-server-brown.vercel.app/events/${params.id}`)
             }
         ]
     },

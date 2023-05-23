@@ -6,13 +6,13 @@ import Swal from "sweetalert2";
 const VolunteerList = () => {
   const [volunteers, setVolunteers] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/volunteerList")
+    fetch("https://volunteer-network-server-brown.vercel.app/volunteerList")
       .then((res) => res.json())
       .then((data) => setVolunteers(data));
   }, []);
 
   const handleRemoveVolunteer = (_id) => {
-    fetch(`http://localhost:5000/volunteerList/${_id}`, {
+    fetch(`https://volunteer-network-server-brown.vercel.app/volunteerList/${_id}`, {
       method: "DELETE",
     })
       .then((res) => res.json())

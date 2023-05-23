@@ -15,7 +15,7 @@ const AddEvent = () => {
 
   const newEvent = {title,date,description,img};
 
-  fetch("http://localhost:5000/addEvent",{
+  fetch("https://volunteer-network-server-brown.vercel.app/addEvent",{
     method:"POST",
     headers:{
       'content-type':"application/json"

@@ -7,7 +7,7 @@ const MyEvents = () => {
   const { user, } = useContext(AuthContext);
   const [events, setEvents] = useState([]);
 
-  const url = `http://localhost:5000/userEvents?email=${user?.email}`
+  const url = `https://volunteer-network-server-brown.vercel.app/userEvents?email=${user?.email}`
   useEffect(() => {
     fetch(url,{
         method:"GET",
@@ -29,7 +29,7 @@ const MyEvents = () => {
 
 
   const handleUserEventDelete = (id) => {
-    fetch(`http://localhost:5000/userEvents/${id}`,{
+    fetch(`https://volunteer-network-server-brown.vercel.app/userEvents/${id}`,{
         method:"DELETE"
     })
     .then((res) => res.json())

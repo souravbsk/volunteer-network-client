@@ -4,7 +4,7 @@ import EventCard from "../EventCard/EventCard";
 const AllEvents = () => {
   const [events, setEvents] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/events")
+    fetch("https://volunteer-network-server-brown.vercel.app/events")
       .then((res) => res.json())
       .then((data) => setEvents(data));
   }, []);
@@ -14,8 +14,9 @@ const AllEvents = () => {
     e.preventDefault();
 
     const searchText = e.target.search.value;
-    console.log(searchText);
-    fetch(`http://localhost:5000/search/${searchText}`)
+
+    console.log("text", searchText);
+    fetch(`https://volunteer-network-server-brown.vercel.app/search/${searchText}`)
     .then(res => res.json())
     .then(data => {
       setEvents(data);
