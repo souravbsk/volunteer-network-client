@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FaTrash, FaTrashAlt } from "react-icons/fa";
 import VolunteerRow from "../VolunteerRow/VolunteerRow";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 const VolunteerList = () => {
   const [volunteers, setVolunteers] = useState([]);
@@ -39,6 +40,9 @@ const VolunteerList = () => {
   };
   return (
     <div>
+       <Helmet>
+            <title>Volunteer Network | Register List</title>
+        </Helmet>
       <h2 className="py-6 text-xl bg-white ps-9 font-semibold">
         Volunteer register list
       </h2>

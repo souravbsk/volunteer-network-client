@@ -26,7 +26,7 @@ const Header = () => {
         </div>
         <div className="flex-none">
           <ul
-            className={`md:menu-horizontal z-40 md:p-0 px-7 top-28 p-8 space-y-2 md:bg-transparent bg-slate-200 absolute md:static duration-300 items-center gap-8 ${
+            className={`md:menu-horizontal  z-40 md:p-0 px-7 top-28 p-8 space-y-2 md:bg-transparent bg-slate-200 absolute md:static duration-300 items-center gap-8 ${
               isToggle ? "left-0" : "-left-56"
             }`}
           >
